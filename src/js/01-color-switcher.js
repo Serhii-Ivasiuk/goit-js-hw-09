@@ -17,9 +17,7 @@ function handleStartBtnClick() {
   refs.startBtn.disabled = true;
   refs.stopBtn.disabled = false;
 
-  intervalId = setInterval(() => {
-    setRandomBodyBgColor();
-  }, SWITCH_COLOR_DELAY);
+  intervalId = setInterval(setRandomBodyBgColor, SWITCH_COLOR_DELAY);
 }
 
 function handleStopBtnClick() {
